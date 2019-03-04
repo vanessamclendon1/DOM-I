@@ -65,6 +65,7 @@ aTag[5].innerText ='Contact';
 const newH1Tag = document.querySelector('h1');
 newH1Tag.textContent = `DOM Is Awesome`;
 
+
 //cta button
 const btnCta = document.querySelector('button');
 btnCta.innerText = "Get Started";
@@ -74,10 +75,29 @@ const imgCta = document.querySelector('#cta-img');
 imgCta.src = "img/header-img.png";
 imgCta.alt = "Image of a code snippet.";
 
-//
+//main-content 
+const mainContent = document.querySelectorAll('.text-content');
+/**top of main content  */
+mainContent[0].querySelector('h4').textContent = siteContent['main-content']['features-h4'];
+mainContent[0].querySelector('p').textContent = siteContent['main-content']['features-content'];
 
+mainContent[1].querySelector('h4').textContent = siteContent['main-content']['about-h4'];
+mainContent[1].querySelector('p').textContent = siteContent['main-content']['about-content'];
 
+//Middle Image in Main Content 
+const imgMiddle = document.querySelector('#middle-img');
+imgMiddle.src = "img/mid-page-accent.jpg";
+imgMiddle.alt = "Image of code snippets across the screen";
 
+//bottom main-content 
+mainContent[2].querySelector('h4').textContent = siteContent['main-content']['services-h4'];
+mainContent[2].querySelector('p').textContent = siteContent['main-content']['services-content'];
 
+mainContent[3].querySelector('h4').textContent = siteContent['main-content']['product-h4'];
+mainContent[3].querySelector('p').textContent = siteContent['main-content']['product-content'];
+mainContent[4].querySelector('h4').textContent = siteContent['main-content']['vision-h4'];
+mainContent[4].querySelector('p').textContent = siteContent['main-content']['vision-content'];
 
-
+//contact
+const lastContact = document.querySelectorAll('.contact');
+lastCont
