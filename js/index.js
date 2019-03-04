@@ -61,6 +61,25 @@ aTag[4].innerText = 'About';
 aTag[5].setAttribute('a','nav-item-6');
 aTag[5].innerText ='Contact';
 
+//used forEach to make navs
+aTag.forEach(link => link.style.color ='green');
+
+ //add two nav items
+const newATags = document.createElement('a');
+const mainNavs = document.querySelector('nav');
+newATags.innerText = 'Reviews';
+newATags.href = '#';
+mainNavs.prepend(newATags);
+newATags.style.color = 'green';
+
+ const newATago = document.createElement('a');
+const mainNav1 = document.querySelector('nav');
+newATago.innerText = 'Info';
+newATago.href = '#';
+mainNav1.append(newATago);
+newATago.style.color = 'green';
+
+
 //cta section
 const newH1Tag = document.querySelector('h1');
 newH1Tag.textContent = `DOM Is Awesome`;
