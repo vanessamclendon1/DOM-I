@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //selectors for Navigation
-let aTag = document.querySelectorAll('a');
+const aTag = document.querySelectorAll('a');
 aTag[0].setAttribute('a', '.nav-item-1');
 aTag[0].innerText = "Service";
 
@@ -60,3 +60,24 @@ aTag[4].innerText = 'About';
 
 aTag[5].setAttribute('a','nav-item-6');
 aTag[5].innerText ='Contact';
+
+//cta section
+const newH1Tag = document.querySelector('h1');
+newH1Tag.textContent = `DOM Is Awesome`;
+
+//cta button
+const btnCta = document.querySelector('button');
+btnCta.innerText = "Get Started";
+
+//cta image 
+const imgCta = document.querySelector('#cta-img');
+imgCta.src = "img/header-img.png";
+imgCta.alt = "Image of a code snippet.";
+
+//
+
+
+
+
+
+
