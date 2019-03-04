@@ -99,5 +99,17 @@ mainContent[4].querySelector('h4').textContent = siteContent['main-content']['vi
 mainContent[4].querySelector('p').textContent = siteContent['main-content']['vision-content'];
 
 //contact
-const lastContact = document.querySelectorAll('.contact');
-lastCont
+const lastContact = document.querySelector('.contact');
+lastContact.getElementsByTagName('h4')[0].textContent = siteContent['contact']['contact-h4']
+lastContact.getElementsByTagName('p')[0].textContent = siteContent['contact']['address']
+
+lastContact.getElementsByTagName('p')[1].textContent = siteContent['contact']['phone']
+lastContact.getElementsByTagName('p')[2].textContent = siteContent['contact']['email']
+
+
+//footer
+const footerText = document.querySelector('footer');
+footerText.innerText = "Copyright Great Idea! 2018";
+
+
+
