@@ -82,7 +82,7 @@ newATago.style.color = 'green';
 
 //cta section
 const newH1Tag = document.querySelector('h1');
-newH1Tag.textContent = `DOM Is Awesome`;
+newH1Tag.innerHTML = `DOM <br> Is <br> Awesome`;
 
 
 //cta button
